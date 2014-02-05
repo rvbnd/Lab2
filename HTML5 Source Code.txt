@@ -1,0 +1,79 @@
+<div data-role="page" id="page1">
+
+     <div class="Header" data-role="header">
+          <h1>Know Your Kansas City</h1>
+     </div>
+    
+<div data-role="content">     
+          <p><a href="#GeoLocationPage" data-role="button">Check Your City Geo-location</a></p>
+          <p><a href="#GetDirectionsPage" data-role="button">Get Directions</a></p>
+          <p><a href="#WeatherPage" data-role="button">Check Your City Weather </a></p>
+        <p><a href="#CityTourPage" data-role="button">City Tour</a></p>
+        <p><a href="#PlacesofInterestPage" data-role="button">Places of Interest</a></p>
+ </div>
+</div>
+
+<div data-role="page" id="GeoLocationPage">
+
+    <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Geo-location Page</h1>
+     </div>
+
+<div data-role="content">        
+        <script src="https://maps.googleapis.com/maps/api/js?            v=3.exp&sensor=true"></script>
+        <p>Geolocation Service</p>
+      <div id="map"></div>
+</div>
+</div>
+
+<div data-role="page" id="GetDirectionsPage">
+
+    <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Get Directions Page</h1>
+     </div>
+    <div data-role="content">
+        <p>Direction Service</p>
+        <button id="button">Show Direction</button>
+        <div id="map_canvas" style="height: 400px; width: 400px"></div>
+    </div>
+    </div>
+
+<div data-role="page" id="WeatherPage">
+
+    <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1> City Weather Condition</h1>
+     </div>
+    <div data-role="content">
+        <p>Kansas City Weather Condition</p>
+        <button id="showweather">Show weather</button>
+        <div id="Jweather"></div>
+    </div>
+</div>
+
+<div data-role="page" id="CityTourPage">
+
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>City Tour Page</h1>
+     </div>  
+   
+    <a href="#CityTourPage" data-rel="CityTour"></a>
+<div data-role="CityTour" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="10,15" class="ui-content">
+<iframe src="http://player.vimeo.com/video/6470236?portrait=0" width="497" height="298" seamless></iframe>
+</div>
+</div>
+
+ <div data-role="page" id="PlacesofInterestPage">
+
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Places Of Interest Page</h1>
+     </div>  
+     
+<a href="#PlacesofInterestPage" data-rel="POI"></a>
+<div data-role="POI" id="popupPhoto" data-overlay-theme="a" data-theme="d" data-corners="false">
+<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="http://upload.wikimedia.org/wikipedia/commons/8/89/Kansas_City_Montage.jpg" alt="Crystal">
+</div>
